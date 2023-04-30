@@ -5,7 +5,7 @@ import SecondaryNav from "./components/navbars/SecondaryNav";
 
 function App() {
     return (
-        <div className="App">
+        <div>
             <SecondaryNav />
             <PrimaryNav />
         </div>

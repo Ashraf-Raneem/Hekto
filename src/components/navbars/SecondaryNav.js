@@ -5,7 +5,7 @@ import { BsArrowDown } from "react-icons/bs";
 
 const SecondaryNav = () => {
     return (
-        <div className="absolute top-0 right-0 left-0 bg-[#7E33E0] px-60 py-4">
+        <div className="absolute top-0 right-0 left-0 bg-[#7E33E0] md:px-10 xl:px-60 md:py-4 md:block hidden">
             <div className="flex flex-row items-center justify-between">
                 <div className="flex flex-row items-center">
                     <div className="flex flex-row items-center">
