@@ -1,8 +1,10 @@
 import React, { useState } from "react";
-import { AiOutlineSearch } from "react-icons/ai";
+import { AiOutlineSearch, AiOutlineMail, AiOutlineShoppingCart } from "react-icons/ai";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { BsFillPersonFill } from "react-icons/bs";
+import { BiPhoneCall } from "react-icons/bi";
 import SidebarNav from "./Sidebar";
+import Dropdown from "../dropdowns/Dropdown";
 
 const PrimaryNav = () => {
     const [searchValue, setSearchValue] = useState("");
@@ -19,7 +21,23 @@ const PrimaryNav = () => {
                             <span className="text-[#0D0E43] text-2xl">Hekto</span>
                         </div>
                         <div className="block md:hidden flex flex-row items-center">
-                            <BsFillPersonFill className="cursor-pointer mx-4 text-xl text-[#7E33E0]" />
+                            <Dropdown
+                                head={<BsFillPersonFill className="cursor-pointer mx-4 text-xl text-[#7E33E0]" />}
+                                style="right-0 mr-12"
+                            >
+                                <div className="flex flex-row items-center mb-1 cursor-pointer">
+                                    <span className="text-[#0D0E43] ml-2 text-sm mr-1">Login</span>
+                                    <BiPhoneCall className="text-[#0D0E43] text-xs" />
+                                </div>
+                                <div className="flex flex-row items-center mb-1 cursor-pointer">
+                                    <span className="text-[#0D0E43] ml-2 text-sm mr-1">Wishlist</span>
+                                    <AiOutlineMail className="text-[#0D0E43] text-xs" />
+                                </div>
+                                <div className="flex flex-row items-center mb-1 cursor-pointer">
+                                    <span className="text-[#0D0E43] ml-2 text-sm mr-1">Cart</span>
+                                    <AiOutlineShoppingCart className="text-[#0D0E43] text-xs" />
+                                </div>
+                            </Dropdown>
                             <GiHamburgerMenu
                                 className="cursor-pointer text-xl text-[#7E33E0]"
                                 onClick={() => toggleSidebarAction()}

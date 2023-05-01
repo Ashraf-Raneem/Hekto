@@ -1,7 +1,8 @@
 import React from "react";
 import { AiOutlineMail, AiOutlineShoppingCart } from "react-icons/ai";
 import { BiPhoneCall } from "react-icons/bi";
-import { BsArrowDown } from "react-icons/bs";
+import Dropdown from "../dropdowns/Dropdown";
+import { languages } from "../../data/languages";
 
 const SecondaryNav = () => {
     return (
@@ -19,8 +20,7 @@ const SecondaryNav = () => {
                 </div>
                 <div className="flex flex-row">
                     <div className="flex flex-row">
-                        <span className="text-[#f1f1f1] ml-2">English</span>
-                        <BsArrowDown className="text-[#f1f1f1] mt-[0.8px]" />
+                        <Dropdown options={languages}></Dropdown>
                     </div>
                     <div className="flex flex-row">
                         <span className="text-[#f1f1f1] ml-2 mr-1">Login</span>
