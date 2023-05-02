@@ -44,23 +44,35 @@ const PrimaryNav = () => {
                             />
                         </div>
                         <div className="flex flex-row md:block hidden">
-                            <span className="text-[#0D0E43] mx-2">Home</span>
-                            <span className="text-[#0D0E43] mx-2">Pages</span>
-                            <span className="text-[#0D0E43] mx-2">Products</span>
-                            <span className="text-[#0D0E43] mx-2">Blog</span>
-                            <span className="text-[#0D0E43] mx-2">Shop</span>
-                            <span className="text-[#0D0E43] mx-2">Contact</span>
+                            <span className="text-[#0D0E43] mx-2 cursor-pointer hover:text-[#FB2E86] transition ease-out">
+                                Home
+                            </span>
+                            <span className="text-[#0D0E43] mx-2 cursor-pointer hover:text-[#FB2E86] transition ease-out">
+                                Pages
+                            </span>
+                            <span className="text-[#0D0E43] mx-2 cursor-pointer hover:text-[#FB2E86] transition ease-out">
+                                Products
+                            </span>
+                            <span className="text-[#0D0E43] mx-2 cursor-pointer hover:text-[#FB2E86] transition ease-out">
+                                Blog
+                            </span>
+                            <span className="text-[#0D0E43] mx-2 cursor-pointer hover:text-[#FB2E86] transition ease-out">
+                                Shop
+                            </span>
+                            <span className="text-[#0D0E43] mx-2 cursor-pointer hover:text-[#FB2E86] transition ease-out">
+                                Contact
+                            </span>
                         </div>
                     </div>
                     <div className="flex flex-row md:block hidden">
                         <div className="flex flex-row">
                             <input
                                 type="text"
-                                className="rounded-l border-t-2 border-l-2 border-b-2 border-slate-300 w-60"
+                                className="rounded-l border-t-2 border-l-2 border-b-2 border-slate-300 w-60 outline-none px-2 focus:border-slate-500 transition ease-out"
                                 onChange={(ev) => setSearchValue(ev.value)}
                                 value={searchValue}
                             />
-                            <button className="my-0 mx-auto p-2 bg-[#FB2E86] rounded-r my-[1px]">
+                            <button className="my-0 mx-auto p-2 bg-[#FB2E86] rounded-r">
                                 <AiOutlineSearch className="text-white" />
                             </button>
                         </div>

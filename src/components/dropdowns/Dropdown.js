@@ -54,13 +54,13 @@ const Dropdown = (props) => {
                         {!children
                             ? options.map((item) => (
                                   <div
-                                      className="flex flex-row items-center cursor-pointer"
+                                      className="flex flex-row item-center cursor-pointer mb-2"
                                       onClick={() => setSelected(item.name)}
                                       key={item.id}
                                   >
-                                      <li className="text-[#0D0E43] text-sm ml-2 mr-1 mb-2">{item.name}</li>
+                                      <li className="text-[#0D0E43] text-sm ml-2 mr-1">{item.name}</li>
                                       {selected === item.name && (
-                                          <AiOutlineCheck className="text-xs text-[#7E33E0] ml-2" />
+                                          <AiOutlineCheck className="text-xs text-[#7E33E0] ml-2 mt-1" />
                                       )}
                                   </div>
                               ))
